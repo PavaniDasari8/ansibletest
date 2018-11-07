@@ -1,0 +1,14 @@
+---
+- name: vm2
+  hosts: vm2
+  become: yes
+  roles:
+   - general
+   - nginx
+
+- name: vm3
+  hosts: vm3
+  become: yes
+  roles:
+   - general
+   - nginx
